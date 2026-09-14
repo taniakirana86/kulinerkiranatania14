@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kuliner Unik & Lezat</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .card .desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .card .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        .btn-checkout {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-checkout:hover {
+            background-color: #128c7e;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kedai Kuliner Special</h1>
+        <p>Pesan langsung via WhatsApp & Dapatkan Penawaran Terbaik!</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- KATEGORI IKAN PAUS -->
+        <h2 class="section-title">Menu Ikan Paus</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&auto=format&fit=crop&q=60" alt="Ikan Paus Segar">
+                <div class="card-content">
+                    <div>
+                        <h3>Ikan Paus Segar (Olahan)</h3>
+                        <p class="desc">Daging ikan paus olahan pilihan dengan bumbu spesial khas kedai.</p>
+                    </div>
+                    <div>
+                        <div class="price">Rp 150.000 / porsi</div>
+                        <a href="https://wa.me/6285655905755?text=Halo,%20saya%20mau%20pesan%20Ikan%20Paus%20Segar" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KATEGORI JEMBLEM -->
+        <h2 class="section-title">Menu Jemblem (3 Varian)</h2>
+        <div class="grid-container">
+            <!-- Jemblem 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&auto=format&fit=crop&q=60" alt="Jemblem Gula Merah">
+                <div class="card-content">
+                    <div>
+                        <h3>Jemblem Gula Merah Original</h3>
+                        <p class="desc">Jemblem singkong renyah di luar dengan isian gula merah murni yang lumer.</p>
+                    </div>
+                    <div>
+                        <div class="price">Rp 15.000 / porsi</div>
+                        <a href="https://wa.me/6285655905755?text=Halo,%20saya%20mau%20pesan%20Jemblem%20Gula%20Merah" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jemblem 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?w=500&auto=format&fit=crop&q=60" alt="Jemblem Cokelat">
+                <div class="card-content">
+                    <div>
+                        <h3>Jemblem Cokelat Lumer</h3>
+                        <p class="desc">Varian modern dengan isian cokelat premium yang melimpah.</p>
+                    </div>
+                    <div>
+                        <div class="price">Rp 18.000 / porsi</div>
+                        <a href="https://wa.me/6285655905755?text=Halo,%20saya%20mau%20pesan%20Jemblem%20Cokelat" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jemblem 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&auto=format&fit=crop&q=60" alt="Jemblem Keju">
+                <div class="card-content">
+                    <div>
+                        <h3>Jemblem Keju Mozzarella</h3>
+                        <p class="desc">Gurihnya singkong dipadukan dengan keju mozzarella yang molor.</p>
+                    </div>
+                    <div>
+                        <div class="price">Rp 20.000 / porsi</div>
+                        <a href="https://wa.me/6285655905755?text=Halo,%20saya%20mau%20pesan%20Jemblem%20Keju" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KATEGORI BAKSO -->
+        <h2 class="section-title">Menu Bakso</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&auto=format&fit=crop&q=60" alt="Bakso Spesial">
+                <div class="card-content">
+                    <div>
+                        <h3>Bakso Daging Sapi Spesial</h3>
+                        <p class="desc">Bakso daging sapi asli lengkap dengan kuah kaldu gurih, tahu, dan mie.</p>
+                    </div>
+                    <div>
+                        <div class="price">Rp 25.000 / porsi</div>
+                        <a href="https://wa.me/6285655905755?text=Halo,%20saya%20mau%20pesan%20Bakso%20Spesial" class="btn-checkout" target="_blank">Checkout WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Pemesanan & Informasi Kontak: <strong>+62 856-5590-5755</strong></p>
+        <p>&copy; kiranatania@2026 Toko Kuliner Unik. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
